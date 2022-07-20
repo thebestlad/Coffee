@@ -1,0 +1,103 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F781;
+}
+.mug{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 51, 0);
+    border: 15px solid rgb(51, 50, 50);
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
+}
+.handle{
+    height: 60px;
+    width: 30px;
+    border: 2px solid rgb(51, 50, 50);
+    border-right: 10px solid rgb(51, 50, 50);
+border-top: 10px solid rgb(51, 50, 50);
+border-bottom: 10px solid black;
+border-radius: 20px;
+}
+.smoke{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 50px;
+    transform: rotateY(180deg) translateX(40px);
+    position: absolute;
+    color: gray;
+    font-weight: bolder;
+    animation-name: movesmoke;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes movesmoke{
+0%{
+    transform: rotateY(180deg) translateX(40px) translateY(-100px);
+    opacity: 0;
+}
+50%{
+    transform: rotateY(180deg) translateX(40px) translateY(-120px);
+    opacity: 1
+}
+100%{
+    transform: rotateY(180deg) translateX(40px) translateY(-140px);
+opacity: 0;
+}
+}
+.smoke1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 50px;
+    transform: rotateY(180deg) translateX(20px) translateY(-10px);
+    font-weight: bolder;
+    position: absolute;
+    color: gray;
+    animation-name: movesmoke1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes movesmoke1{
+    0%{
+        transform: rotateY(180deg) translateX(20px) translateY(-120px);
+        opacity: 0;
+    }
+    50%{
+        transform: rotateY(180deg) translateX(20px) translateY(-140px);
+   opacity: 1;
+    }
+    100%{
+        transform: rotateY(180deg) translateX(20px) translateY(-160px);
+    opacity: 0;
+    }
+    }
+.smoke2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 50px;
+    transform: rotateY(180deg) translateX(0px) translateY(-100px);
+    font-weight: lighter;
+    position: absolute;
+    color: gray;
+    font-weight: bolder;
+    animation-name: movesmoke2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes movesmoke2{
+    0%{
+        transform: rotateY(180deg) translateX(0px) translateY(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: rotateY(180deg) translateX(0px) translateY(-120px);
+        opacity: 1;
+    }
+    100%{
+        transform: rotateY(180deg) translateX(0px) translateY(-140px);
+        opacity: 0;
+    }
+    }
